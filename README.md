@@ -2,7 +2,7 @@ Solves the compressible Euler equations using
 the upwind scheme in AMReX. The algorithm used is from Kwatra and Fedkiw (2011).
 Test cases of Sod shock tube, Gaussian acoustic pulse are done. A supersonic jet
 in subsonic crossflow test is also done.
-1. To run shock tube do
+1. To run shock tube, go to Exec/SingleVortex and do
 sh run_SodShockTube.sh
 sh run_3d.sh
 2. To run acoustic pulse 3d
