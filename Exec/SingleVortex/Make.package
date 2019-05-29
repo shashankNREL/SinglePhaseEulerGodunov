@@ -1,0 +1,2 @@
+#f90EXE_sources += face_velocity_$(DIM)d.f90
+F90EXE_sources += face_velocity_3d.F90

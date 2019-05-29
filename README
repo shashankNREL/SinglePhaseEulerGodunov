@@ -1,0 +1,15 @@
+FluidSolverFrameworkGeneral: Solves the compressible Euler equations using
+the upwind scheme in AMReX. The algorithm used is from Kwatra and Fedkiw (2011).
+Test cases of Sod shock tube, Gaussian acoustic pulse are done. The inputs needed
+these are in SingleVortex/TestInputs. The necessary routines are in Source/Testing. 
+To run the acoustic pulse case, copy SingleVortex/TestInputs to SingleVortex/inputs
+and Source/Testing/test_acousticpulse3D to Source directory. Then do sh run_3d.sh
+in SingleVortex. A jet in crossflow test case is also done.
+
+It is a AMReX based code designed to run in parallel using MPI/OMP.
+It uses the Fortran interfaces of AMReX.
+
+The directory Exec/SingleVortex includes a makefile and a sample inputs file.  
+Plotfiles are generated that can be viewed with amrvis2d / amrvis3d. 
+(CCSE's native vis / spreadsheet tool, downloadable separately from ccse.lbl.gov)
+or with Visit.
